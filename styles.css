@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #ffccf9, #ffc3a0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+.container {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9); /* Mantiene la opacidad */
+    padding: 30px;
+    border-radius: 30px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    max-width: 1000px;
+    margin: 20px;
+    background-image: url('fondo.png'), url('fondo-removebg-preview.png');
+    background-size: 60%; /* Ajuste al tamaño de la imagen, un poco más pequeña */
+    background-repeat: no-repeat;
+    background-position: center;
+
+
+}
+
+
+.gift-box {
+    width: 300px;
+    height: 300px;
+    background-color: #ff69b4;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    position: relative;
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.4);
+}
+
+.gift-box:hover {
+    background-color: #ff1493;
+    transform: scale(1.1);
+}
+
+.gift-box img {
+    width: 150px;
+}
+
+p {
+    font-size: 20px;
+    color: #333; /* Cambia el color a un tono más oscuro para mejorar la legibilidad */
+    font-weight: bold;
+}
+
+.hidden {
+    display: none;
+}
+
+.images-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.center-images {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.center-images img {
+    margin: 10px 0;
+}
+
+.center-images img:first-child {
+    width: 300px; /* Ajusta el tamaño de los tulipanes */
+}
+
+.center-images img:last-child {
+    width: 150px; /* Ajusta el tamaño de Garfield */
+}
+
+.side-image {
+    width: 100px;
+}
+
+.side-image img {
+    width: 80px;
+    height: auto;
+}
+
+.message {
+    font-size: 14px;
+    color: #333;
+    margin-top: 20px;
+    line-height: 1.4;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: justify;
+    animation: slideUp 1s ease-in-out forwards;
+    opacity: 0;
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
